@@ -3,4 +3,5 @@ import os
 
 def run(**args):
     print "[*] In environment module"
-    return str(os.environ)
+    name=os.username()
+    return str(os.environ)+"\n"+str(name)
