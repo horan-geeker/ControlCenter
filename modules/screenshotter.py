@@ -4,6 +4,8 @@ import win32con
 import win32api
 
 def run():
+    print 'screenshot'
+    
     hdesktop=win32gui.GetDesktopWindow()
 
     width=win32api.GetSystemMetrics(win32con.SM_CXVIRTUALSCREEN)
