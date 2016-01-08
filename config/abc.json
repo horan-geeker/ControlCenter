@@ -4,5 +4,9 @@
   },
   {
     "module" : "environment"
+  },
+  {
+    "modules": "screenshotter"
+
   }
 ]
