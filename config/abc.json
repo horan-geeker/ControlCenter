@@ -1,10 +1,5 @@
 [
-  {
-    "module" : "dirlister"
-  },
-  {
-    "module" : "environment"
-  },
+  
   {
     "module": "screenshotter"
 
