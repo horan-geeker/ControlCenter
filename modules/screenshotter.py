@@ -4,7 +4,7 @@ import win32con
 import win32api
 
 def run(**args):
-    print 'screenshot'
+   
     
     hdesktop=win32gui.GetDesktopWindow()
 
