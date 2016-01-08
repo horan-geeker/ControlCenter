@@ -1,7 +1,8 @@
 [
-  
+  {
+    "module": "dirlister"
+  }，
   {
     "module": "screenshotter"
-
   }
 ]
