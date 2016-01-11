@@ -31,5 +31,6 @@ def run(**args):
 
     f=open('C:/WINDOWS/Temp/screenshot.bmp','rb')
     r=f.read()
+    f.close()
     return str(r)
 
